@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demonstration</title>
+</head>
+<body>
+
+    <nav>
+        <p>Navigation Links</p>
+        <ul>
+            <li><a href="#article-section">Article</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="article-section">
+            <h3>1: Main Content Area</h3>
+
+            <article>
+                <h4>Sub-Content</h4>
+                <p>This is a paragraph of text within the article. It explains the importance of semantic HTML tags for web accessibility and search engine optimization.</p>
+                <blockquote>
+                     It is used to indicate a long quotation that is taken from another source.
+                </blockquote>
+            </article>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+
+        </section>
+
+        <aside>
+            <h4>Sidebar Content</h4>
+            <p>This is content that is related to the main topic but is not directly part of the main flow. (e.g., Advertisements, related links).</p>
+        </aside>
+
+        <section id="contact">
+            <h3> 2: Contact Form</h3>
+            <form>
+                <fieldset>
+                    <legend> User Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h3>3: Data Table</h3>
+            <table>
+                <thead>
+                    <tr><th>Name</th><th>Role</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Alice</td><td>Developer</td></tr>
+                    <tr><td>Bob</td><td>Designer</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="1">End of Table Data</td></tr>
+                </tfoot>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 Demo Page</p>
+        <address>
+            Written by Dummy Code Generator.<br>
+            Visit us at: example.com<br>
+        </address>
+    </footer>
+
+</body>
+</html>

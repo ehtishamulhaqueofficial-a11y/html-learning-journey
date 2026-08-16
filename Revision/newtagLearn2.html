@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Inline and Form Tags Demonstration</title>
+    
+</head>
+<body>
+
+    <div>
+
+        <!-- <code> and <kbd> and <samp> and <var> -->
+        <p>To declare a variable, use <var>x</var>. To show code, use <code class="code-block">const example = 'Hello';</code>. If a user needs to press a key, instruct them to press <kbd>Ctrl</kbd> + <kbd>C</kbd>. The program's output (&lt;samp&gt;) will be: <samp>Success!</samp></p>
+
+        <!-- <abbr> and <acronym> -->
+        <p>The standard way to define an abbreviation is with <abbr title="HyperText Markup Language">HTML</abbr>. The <acronym title="Self-Contained Element" class="deprecated">tag</acronym> is deprecated.</p>
+
+        <!-- <cite> and <q> -->
+        <p>The source of this information is cited in this <cite>book title</cite>. Someone once said, <q>The web is for everyone.</q> (for short quotes).</p>
+   </div>
+
+    <div class="example-block">
+        <h3>Form Tags Demonstration</h3>
+
+        <form onsubmit="return false;">
+            <!-- <label> and <input> -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Text Input"><br><br>
+
+            <!-- <select> -->
+            <label for="options">Choose an option:</label>
+            <select id="options" name="options">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select><br><br>
+
+            <!-- <textarea> -->
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Type your long text here..."></textarea><br><br>
+
+            <!-- <button> -->
+            <button type="button" onclick="calculateOutput()">Calculate</button>
+
+            <!-- <output> -->
+            <p>Result: <output name="result" for="username options" id="result-output">0</output></p>
+
+        </form>
+    </div>
+
+    <script>
+        // Demonstration of a small JavaScript function used with the <button> and <output> tags
+        function calculateOutput() {
+            const username = document.getElementById('username').value;
+            const output = document.getElementById('result-output');
+            
+            if (username.length > 0) {
+                // The <span> tag is often used with JS to target specific inline content
+                output.innerHTML = `Welcome, <span style="color: blue; font-weight: bold;">${username}</span>!`;
+            } else {
+                output.innerHTML = 'Please enter a username.';
+            }
+        }
+
+        // Demonstration of the <span> tag (used for styling)
+        document.getElementById('simple-img').onload = function() {
+            console.log('Image loaded.');
+        };
+    </script>
+
+</body>
+</html>
